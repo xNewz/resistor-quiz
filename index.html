@@ -1,0 +1,85 @@
+<!-- Created By CodingNepal - www.codingnepalweb.com  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Deme] Resistor Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAweome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>เริ่มทำแบบทดสอบ</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>คำชี้แจง</span></div>
+        <div class="info-list">
+            <div class="info">1. คุณจะมีเวลาในการทำแบบทดสอบข้อละ <span>15 วินาที</span></div>
+            <div class="info">2. เมื่อคุณเลือกคำตอบแล้ว จะไม่สามารถยกเลิกได้</div>
+            <div class="info">3. เมื่อเวลาหมดจะถือว่าข้อนั้นคุณไม่ได้ตอบ</div>
+            <div class="info">4. เมื่อคุณยังทำแบบทดสอบยังไม่เสร็จ คุณไม่สามารถออกจากแบบทดสอบได้</div>
+            <div class="info">5. ระบบจะเฉลยอัตโนมัติ เมื่อคุณตอบคำถามข้อนั้นๆแล้ว</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">ยกเลิก</button>
+            <button class="restart">เริ่มทำ</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">แบบทดสอบตัวต้านทาน 4 แถบสี</div>
+            <div class="timer">
+                <div class="time_left_txt">เหลือเวลา</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_img">
+                <!-- Here I've inserted image from JavaScript -->
+            </div>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">ข้อต่อไป</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">คุณได้ทำแบบทดสอบเสร็จเรียบร้อยแล้ว!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">ทำอีกครั้ง</button>
+            <button class="quit">ออก</button>
+        </div>
+    </div>
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="js/questions.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
